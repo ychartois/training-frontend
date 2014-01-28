@@ -1,0 +1,133 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	background: #333;
+}
+
+body {
+	width: 600px;
+	background: #FFF;
+	margin: 0 auto;
+}
+
+head, title {
+	display: block;
+	height: 100px;
+	background: #FFF;
+}
+
+title {
+	text-align: center;
+	font-size: 28px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.red {
+	color: red;
+}
+
+#unique {
+	font-weight: bold;
+}
+
+[title] {
+	border-bottom: 1px dashed black;
+	text-decoration: none;
+}
+
+[title=description] {
+	color: green;
+}
+
+[href^="http"] {
+	color: green;
+}
+[href^="https"] {
+	color: red;
+}
+li:nth-child(odd) [href] {
+	background-color: #ccc;
+}
+
+/*
+<p id="the-best" class="foo" data-name="bar">
+*/
+#the-best.foo[data-name=bar] {
+	font-size: 28px;
+}
+
+div.red {
+	background-color: red;
+	padding: 20px;
+}
+div.blue {
+	background-color: blue;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+div > *:first-child {
+	margin-top: 0;
+}
+
+.red > div.red[href=tot] a.hehe#lol {
+	
+}
+
+#test {
+	/*color: yellow;*/
+}
+.test {
+	color: green;
+}
+.blue p.test {
+	color: red;
+}
+
+[href]:hover {
+	font-style: italic;
+}
+
+.hidden-text {
+	transition: opacity 0.5s;
+}
+
+.blue .hidden-text {
+	opacity: 0;
+}
+.blue:hover .hidden-text {
+	opacity: 1;
+}
+
+#menu {
+	min-height: 200px;
+}
+
+#menu li ul {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+#menu li:hover ul {
+	height: 100px;
+}
+
+/* position.html */
+
+#pos div:nth-child(3) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: green;
+}
+
+#pos {
+	position: relative;
+}
