@@ -1,0 +1,22 @@
+* {
+	cursor: default;
+}
+
+.test {
+	display: inline-block;
+	background: #DDD;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/* Permet d'appliquer le style que sur les éléments qui se suivent, 
+   le style ne sera donc pas appliqué sur le dernier !! */
+.test + .test {
+	margin-left: 5px;
+}
+
+/* Bien sûr ça serait plus rapide avec un :hover */
+.test.hover {
+	background : blue;
+	color: white;
+}
